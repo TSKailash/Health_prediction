@@ -27,25 +27,6 @@
 
 ---
 
-## 📁 Project Structure
-
-HealthPredict/
-├── backend/
-│ ├── routes/ # Flask Blueprints (auth, predict, recommend)
-│ ├── app.py # Entry point for Flask
-│ ├── model.pkl # Trained ML model
-│ ├── requirements.txt # Python dependencies
-│ └── .env # Environment variables (Mongo URI, etc.)
-├── frontend/
-│ ├── src/pages/ # React pages (Login, Predict, Result, Chart)
-│ ├── src/assets/ # Logos, icons
-│ ├── App.jsx # Main React App
-│ └── index.html # Entry HTML
-
-
-
----
-
 ## 🧪 Setup Instructions
 
 ### 🖥️ Backend Setup
