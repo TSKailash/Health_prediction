@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     setSuccess('');
     try {
-      const res = await axios.post('http://localhost:5000/auth/login', formData);
+      const res = await axios.post('https://health-prediction-4.onrender.com/auth/login', formData);
       setSuccess(res.data.message);
        localStorage.setItem('user', res.data.userId)
        navigate(`/${localStorage.getItem('user')}`);

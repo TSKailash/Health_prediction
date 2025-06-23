@@ -24,7 +24,7 @@ const PredictionForm = () => {
     if (!userId) return setError('User not logged in');
 
     try {
-      const res = await axios.post('http://localhost:5000/prediction/predict', {
+      const res = await axios.post('https://health-prediction-4.onrender.com/prediction/predict', {
         ...formData,
         userId,
       });

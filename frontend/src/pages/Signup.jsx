@@ -15,7 +15,7 @@ const Signup = () => {
     e.preventDefault();
     setSuccess('');
     try {
-      const res = await axios.post('http://localhost:5000/auth/signup', formData);
+      const res = await axios.post('https://health-prediction-4.onrender.com/auth/signup', formData);
       setSuccess(res.data.message);
     } catch (err) {
       setError(err.response?.data?.error || 'Signup failed');

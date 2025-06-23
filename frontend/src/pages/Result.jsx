@@ -39,7 +39,7 @@ const Result = () => {
       const parsedResult = JSON.parse(storedResult);
       setResult(parsedResult);
       
-      fetch(`http://localhost:5000/recommendations/${parsedResult.risk}`)
+      fetch(`https://health-prediction-4.onrender.com/recommendations/${parsedResult.risk}`)
         .then(res => res.json())
         .then(data => {
           setTips(data.tips);

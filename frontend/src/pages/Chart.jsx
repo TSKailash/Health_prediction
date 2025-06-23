@@ -11,7 +11,7 @@ const Chart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/prediction/history/${userId}`);
+        const res = await axios.get(`https://health-prediction-4.onrender.com/prediction/history/${userId}`);
         const formatted = res.data.map((entry, index) => ({
           ...entry,
           timestamp: new Date(entry.timestamp).toLocaleDateString('en-IN', {
